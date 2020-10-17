@@ -26,6 +26,51 @@ class QuizPage extends React.Component {
                     }
                 ]
             },
+            {
+                name: "Disney",
+                questions: [
+                    {
+                        question: "When was released Micky Mouse?",
+                        answers: ["1950", "3050", "2002", "3050"],
+                        correctAnswer: "1950",
+                    },
+                    {
+                        question: "It's the Mandalorian part of Start Wars Lore?",
+                        answers: ["Yes", "No", "Maybe", "I don't know"],
+                        correctAnswer: "Yes",
+                    }
+                ]
+            },
+            {
+                name: "Stars",
+                questions: [
+                    {
+                        question: "Who's the main character in the film Edge of the Night?",
+                        answers: ["Tom Cruise", "Sherlock Holmes", "Obama", "Trump"],
+                        correctAnswer: "Tom Cruise",
+                    },
+                    {
+                        question: "When is the birthday of Nicolas Cage?",
+                        answers: ["05 of March", "05 of October", "05", "I don't know"],
+                        correctAnswer: "05 of March",
+                    }
+                ]
+            },
+            {
+                name: "Anime",
+                questions: [
+                    {
+                        question: "Who is the main character of Boku no Hero?",
+                        answers: ["Deku", "Bakugo", "All Might", "Uraraka"],
+                        correctAnswer: "Deku",
+                    },
+                    {
+                        question: "Toppen Tengen Gurren Lagan is the best anime?",
+                        answers: ["Yes", "Of COURSE", "nO", "I DON'T KNOW"],
+                        correctAnswer: "Yes",
+                    }
+                ]
+            }
         ],
     }
 
@@ -50,6 +95,18 @@ class QuizPage extends React.Component {
 
         if (this.state.page === "quizmusic") {
             return <Quiz dataQuiz={this.state.quizData[0]} handleBack={this.handleBack} />;
+        }
+
+        if (this.state.page === "quizdisney") {
+            return <Quiz dataQuiz={this.state.quizData[1]} handleBack={this.handleBack} />;
+        }
+
+        if (this.state.page === "quizhollywood") {
+            return <Quiz dataQuiz={this.state.quizData[2]} handleBack={this.handleBack} />;
+        }
+
+        if (this.state.page === "quizanime") {
+            return <Quiz dataQuiz={this.state.quizData[3]} handleBack={this.handleBack} />;
         }
     }
     
