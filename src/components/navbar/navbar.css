@@ -1,0 +1,18 @@
+/* Navbar CSS */
+
+#navbar-container {
+    background-color: slategray;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-container span {
+    padding: 10px;
+    font-size: 60px;
+    color: white;
+}

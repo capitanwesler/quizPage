@@ -1,0 +1,53 @@
+/* All the css for the quiz */
+
+#quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title-and-button {
+    display: flex;
+    align-items: center;
+    width: 700px;
+}
+
+#go-back-button {
+    margin-right: 70px;
+    background-color: brown;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 5px 5px black;
+    color: white;
+}
+
+#quiz-title {
+    font-size: 45px;
+}
+
+#quiz-questions {
+    background-color: lightgray;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#quiz-questions ul {
+    padding-left: 15px;
+    text-align: center;
+}
+
+#quiz-questions p {
+    font-size: 20px;
+}
+
+.answer-quiz {
+    list-style: none;
+    padding: 8px;
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 5px 5px black;
+}

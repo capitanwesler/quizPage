@@ -1,0 +1,10 @@
+/* Main css for the application */
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@800&display=swap');
+
+/* Resets for the CSS to some elements */
+
+body, p {
+    margin: 0;
+    font-family: 'Commissioner', sans-serif;
+}
